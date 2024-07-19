@@ -1,0 +1,113 @@
+/* *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Nunito';
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    /* background-color: #d8d4d4; */
+/* } */ 
+
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: #d8d4d4;
+}
+
+#nav{
+    height: 80px;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 15px;
+    padding: 0px 13px;
+    font-size: 18px;
+    font-weight: 800;
+}
+#nav i{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+}
+#header{
+    padding: 0px 30px;
+    font-size: 27px;
+    line-height: 60px;
+    font-weight:100;
+    
+}
+#center{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 0px 0px 20px 0px; */
+}
+#left{
+    width: 34%;
+    padding: 25px 32px;
+    
+
+}
+#left p{
+    font-size: 15px;
+    font-weight: 500;
+
+}
+#right{
+    width: 30%;
+    /* padding: 18px 15px; */
+    /* background-color: red; */
+    /* margin: 0px 0px 10px 0px; */
+    padding: 0px 30px;
+}
+#elem{
+    
+    /* width: 80%; */
+    display: flex;
+    padding: 8px ;
+    margin: 5px;
+    
+    border-top: 2px solid black;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+   
+}
+
+#elem a{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    font-weight: 500;
+   
+  
+
+}
+#elem i{
+   /* justify-content: flex-end; */
+   font-size: 20px;
+   font-weight: 500;
+   opacity: 0;
+    
+}
+
+#elem:hover i{
+opacity: 1;
+
+}
+
+#bottom{
+    height: 40%;
+    width: 100%;
+    background-color: red;
+    background: url(https://images.unsplash.com/photo-1720831992796-dfce4a96e885?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+}
