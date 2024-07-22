@@ -3,6 +3,7 @@ import { Link, useNavigate, useParams } from "react-router-dom";
 import { ProductContext } from "../utils/Context";
 import axios from "../utils/axios";
 import Loader from "./Loader";
+import { toast } from "react-toastify";
 
 const Details = () => {
     const navigate = useNavigate();
@@ -30,6 +31,7 @@ const Details = () => {
     const filteredproducts = products.filter((p)=>p.id !== id);
     setproducts(filteredproducts);
     localStorage.setItem('product', JSON.stringify(filteredproducts));
+    toast.success("Product Deleted Successfully");
     navigate("/");
     
   }
@@ -48,7 +50,7 @@ const Details = () => {
         <p className="mb-[5%]">
           {product.description}
         </p>
-        <Link className="mr-5 py-2 px-3 border rounded border-blue-200 text-blue-300">
+        <Link to={`/edit/${product.id}`} className="mr-5 py-2 px-3 border rounded border-blue-200 text-blue-300">
           Edit
         </Link>
         <button onClick={()=> ProductDeleteHandler(product.id)} className="py-2 px-3 border rounded border-red-200 text-red-300">
